@@ -1,0 +1,166 @@
+td{
+    border: solid 2px;
+}
+
+html{
+    font-family: 'Quicksand', sans-serif;
+}
+
+img{
+    max-width: 100%;
+}
+
+body{
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: blue;
+}
+
+a:hover{
+    opacity: 0.1;
+    background-color: cyan;
+}
+
+.paragraf{
+    line-height: 1.5em;
+    font-weight: 300;
+}
+
+.container{
+    background: #5f2c82;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #49a09d, #5f2c82);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #49a09d, #5f2c82); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 100vh;/*alto total de la pantalla*/
+    /*centrando al centro de la pantlla*/
+    display: flex;
+    align-items:  center;
+    justify-content: center;
+}
+
+.contenet{
+    max-width: 800px;
+    max-height: 500px;
+    width: 100%;
+    height: 100%;
+    /*height: 70vh;*/
+    background-color: white;
+
+    /*box-shadow: diferenciaHorizontal diferenciaVertical desenfoque amplitud color;*/
+    box-shadow: 2px 3px 6px black;
+    border-radius: 8px;
+    position: relative;
+    padding: 1.5em;
+    overflow: scroll;
+
+}
+
+.actions{
+    position: absolute;
+    right: 1em;
+    top: 1em;
+}
+
+.close{
+    height: 40px;
+    width: 40px;
+    color: white;
+    border-radius: 55%;
+    background-color: blue;
+    display: inline-block;
+    box-shadow: 0 3px 6px black;
+    font-weight: 300;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.table{
+    width: 100%;
+    border-spacing: 0;
+}
+
+.table thead{
+    text-transform: capitalize;
+}
+
+.table td, .table th{
+    padding: 1em;
+    border: 0px;
+    text-align: left;
+}
+
+.table tr:nth-child(even){
+    background-color: burlywood;
+}
+
+.fa-star{
+    color: yellow;
+}
+
+.title{
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.title-item{
+    /*border-bottom-style: solid;
+    border-width: 2px;
+    border-color: blue;*/    
+    /*padding: arriba derecha abajo izquierda;
+    padding: arriba/abajo derecha/izquierda;*/
+    font-size: 2em;
+    border-bottom: blue 2px solid;
+    padding-bottom:1em;
+}
+
+.position{
+    background-color: blue;
+    color: white;
+    padding: 0.5em;
+    border-radius: 8px;
+    margin-right: 0.8em;
+}
+
+.addres{
+    color: #5D70C7;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-top: 1em;
+    display: inline-block;
+}
+
+.image-restaurants{
+    float: left;
+    margin-right: 1.2em;
+}
+
+@media (max-width:550px){
+    .contenet{
+        height: 500px;
+    }
+    td{
+        display: block;
+        width: 100%;
+    }
+
+    td:nth-of-type(1){
+        font-size: 1.5em;
+        font-weight: bold;
+        color: darkblue;
+        padding: 0.5em;
+    }
+
+    th{
+        display: none;
+    }
+}
+
+@media (max-width:600px){
+    .contenet{
+        padding: 1em;
+    }
+}
